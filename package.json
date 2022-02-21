@@ -1,0 +1,39 @@
+{
+  "name": "updater-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "postinstall": "electron-builder install-app-deps",
+    "release": "build"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amritpal7/auto-update-electronJs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "build": {
+    "appId": "com.app.auto_update",
+    "productName": "Auto Update",
+    "copyright": "Copyright © 2022 amrit_pal",
+    "mac": {
+      "category": "public.app-category.developer-tools",
+      "type": "distribution"
+    },
+    "publish": [
+      "github"
+    ]
+  },
+  "dependencies": {
+    "electron-updater": "^4.6.5"
+  },
+  "devDependencies": {
+    "electron": "^17.0.1",
+    "electron-builder": "^22.14.13"
+  }
+}
