@@ -18,7 +18,7 @@
   "author": "",
   "license": "ISC",
   "build": {
-    "appId": "com.app.auto_update",
+    "appId": "com.auto_update.app",
     "productName": "Auto Update",
     "copyright": "Copyright © 2022 amrit_pal",
     "mac": {
